@@ -1,9 +1,9 @@
 const skills = [
-  { title: "Power Apps", color: "bg-[#FF4F79]", symbol: "<>" },
-  { title: "Data", color: "bg-[#00B8A9]", symbol: "01" },
-  { title: "Automation", color: "bg-[#FFD166]", symbol: "*" },
+  { title: "Power Apps", color: "bg-[#FF4F79]", symbol: "◆" },
+  { title: "Data", color: "bg-[#00B8A9]", symbol: "▰▰▰" },
+  { title: "Automation", color: "bg-[#FFD166]", symbol: "⚙" },
   { title: "Web", color: "bg-[#3A86FF]", symbol: "</>" },
-  { title: "Cyber", color: "bg-[#00B8A9]", symbol: "[]" },
+  { title: "Cyber", color: "bg-[#00B8A9]", symbol: "⌁" },
   { title: "Melbourne", color: "bg-white", symbol: "VIC" },
 ];
 
@@ -36,14 +36,14 @@ export function Hero() {
             href="#projects"
             className="rounded-md border-2 border-[#151515] bg-[#FF4F79] px-6 py-3 text-center font-black text-white shadow-[5px_5px_0_#151515] transition hover:-translate-y-1"
           >
-            View Projects -&gt;
+            View Projects →
           </a>
 
           <a
             href="#blog"
             className="rounded-md border-2 border-[#151515] bg-white px-6 py-3 text-center font-black shadow-[5px_5px_0_#151515] transition hover:-translate-y-1"
           >
-            Read Blog -&gt;
+            Read Blog →
           </a>
         </div>
       </div>
@@ -52,9 +52,12 @@ export function Hero() {
         {skills.map((skill) => (
           <div
             key={skill.title}
-            className={`${skill.color} rounded-2xl border-4 border-[#151515] p-5 shadow-[6px_6px_0_#151515] sm:p-6`}
+            className={`${skill.color} relative overflow-hidden rounded-2xl border-4 border-[#151515] p-5 shadow-[6px_6px_0_#151515] sm:p-6`}
           >
-            <div className="mb-6 text-3xl sm:mb-8 sm:text-4xl">
+            <span className="absolute right-4 top-3 text-lg font-black text-[#151515]/25">
+              ✦
+            </span>
+            <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-full border-2 border-[#151515] bg-white text-2xl font-black shadow-[3px_3px_0_#151515] sm:mb-8 sm:h-14 sm:w-14 sm:text-3xl">
               {skill.symbol}
             </div>
             <p className="w-fit rotate-[-2deg] bg-[#151515] px-3 py-1 font-black text-white">

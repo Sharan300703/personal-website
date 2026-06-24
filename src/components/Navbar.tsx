@@ -16,15 +16,19 @@ export function Navbar() {
       <nav className="relative mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
         <a href="#" className="relative text-3xl font-black tracking-tight">
           Sharan
-          <span className="absolute -right-5 -top-2 text-[#FF4F79]">*</span>
-          <span className="absolute -bottom-1 left-0 h-1 w-full bg-[#FF4F79]" />
+          <span className="absolute -right-5 -top-2 rotate-12 text-xl leading-none text-[#FF4F79]">
+            ✦
+          </span>
+          <span className="absolute -bottom-1 left-0 h-1 w-full -rotate-1 rounded-full bg-[#FF4F79]" />
         </a>
 
         <div className="hidden items-center gap-8 font-bold md:flex">
           {navLinks.map((link) => (
             <a
               key={link.href}
-              className={link.href === "#home" ? "text-[#FF4F79]" : undefined}
+              className={`transition hover:text-[#FF4F79] ${
+                link.href === "#home" ? "text-[#FF4F79]" : ""
+              }`}
               href={link.href}
             >
               {link.label}
@@ -44,7 +48,7 @@ export function Navbar() {
           aria-expanded={isMenuOpen}
           aria-controls="mobile-menu"
           onClick={() => setIsMenuOpen((isOpen) => !isOpen)}
-          className="rounded-md border-2 border-[#151515] bg-white px-3 py-2 font-black shadow-[3px_3px_0_#151515] md:hidden"
+          className="rounded-md border-2 border-[#151515] bg-[#FFD166] px-3 py-2 font-black shadow-[3px_3px_0_#151515] transition active:translate-x-[2px] active:translate-y-[2px] active:shadow-[1px_1px_0_#151515] md:hidden"
         >
           Menu
         </button>
@@ -59,7 +63,7 @@ export function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsMenuOpen(false)}
-                className="rounded-md px-2 py-2 hover:bg-[#FFD166]"
+                className="rounded-md px-2 py-2 transition hover:bg-[#FFD166]"
               >
                 {link.label}
               </a>

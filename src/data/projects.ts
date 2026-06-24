@@ -2,29 +2,29 @@ export const projects = [
   {
     title: "Internal IT Request App",
     description:
-      "A Power Apps portal to streamline and track internal IT requests.",
-    tags: ["Power Apps", "SharePoint", "Power Automate"],
+      "A Power Apps approval portal that helps staff request IT resources and routes tasks to the right approvers.",
+    tags: ["Power Apps", "SharePoint", "Power Automate", "Approvals"],
     color: "bg-[#FF4F79]",
   },
   {
     title: "Melbourne Pedestrian Data Story",
     description:
-      "Exploring pedestrian insights across Melbourne with interactive visuals.",
-    tags: ["Python", "Data Viz", "Pandas"],
+      "An interactive data project exploring pedestrian activity across Melbourne using time-based and location-based visualisations.",
+    tags: ["Python", "Pandas", "Data Visualisation", "Urban Data"],
     color: "bg-[#00B8A9]",
   },
   {
     title: "Invoice to Xero Automation",
     description:
-      "Automated invoice processing and syncing to Xero using workflow tools.",
-    tags: ["Power Query", "Xero", "Excel"],
+      "A Power Query workflow that extracts invoice data from PDFs and transforms it into a clean Xero-ready CSV format.",
+    tags: ["Power Query", "Excel", "Xero", "Automation"],
     color: "bg-[#FFD166]",
   },
   {
     title: "Personal Website",
     description:
-      "My personal portfolio built with modern web tech and a retro-pop vibe.",
-    tags: ["React", "TypeScript", "Tailwind"],
+      "A responsive retro-pop portfolio built from scratch to showcase my projects, writing, and technical interests.",
+    tags: ["React", "TypeScript", "Tailwind CSS", "Responsive Design"],
     color: "bg-[#3A86FF]",
   },
 ];
