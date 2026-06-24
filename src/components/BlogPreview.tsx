@@ -1,5 +1,4 @@
 import { posts } from "../data/posts";
-import { StickerLabel } from "./StickerLabel";
 
 const blogCardClass =
   "rounded-2xl border-4 border-[#151515] bg-white p-6 shadow-[6px_6px_0_#151515] transition hover:-translate-y-1 hover:shadow-[8px_8px_0_#151515]";

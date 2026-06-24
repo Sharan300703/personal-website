@@ -1,6 +1,5 @@
 import { projects } from "../data/projects";
 import { ProjectCard } from "./ProjectCard";
-import { StickerLabel } from "./StickerLabel";
 
 const sectionCtaClass =
   "hidden rounded-full border-2 border-[#151515] px-4 py-2 font-black transition hover:-translate-y-1 hover:shadow-[4px_4px_0_#151515] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#151515] md:block";
