@@ -1,11 +1,18 @@
 import { posts } from "../data/posts";
+import { StickerLabel } from "./StickerLabel";
+
+const blogCardClass =
+  "rounded-2xl border-4 border-[#151515] bg-white p-6 shadow-[6px_6px_0_#151515] transition hover:-translate-y-1 hover:shadow-[8px_8px_0_#151515]";
+
+const blogCtaClass =
+  "hidden rounded-full border-2 border-[#151515] px-4 py-2 font-black transition hover:-translate-y-1 hover:shadow-[4px_4px_0_#151515] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#151515] md:block";
 
 export function BlogPreview() {
   return (
     <section id="blog" className="mx-auto max-w-7xl px-5 py-16">
       <div className="mb-8 flex items-end justify-between gap-4">
         <div>
-          <p className="font-black">✎ Latest writing</p>
+          <StickerLabel className="rotate-[1deg]">✎ Latest writing</StickerLabel>
           <h2 className="mt-2 text-4xl font-black md:text-5xl">
             Latest from the Blog
           </h2>
@@ -14,7 +21,7 @@ export function BlogPreview() {
 
         <a
           href="#"
-          className="hidden rounded-full border-2 border-[#151515] px-4 py-2 font-black md:block"
+          className={blogCtaClass}
         >
           View all posts →
         </a>
@@ -24,7 +31,7 @@ export function BlogPreview() {
         {posts.map((post) => (
           <article
             key={post.title}
-            className="rounded-2xl border-4 border-[#151515] bg-white p-6 shadow-[6px_6px_0_#151515] transition hover:-translate-y-1"
+            className={blogCardClass}
           >
             <span className="inline-block rounded bg-[#00B8A9] px-2 py-1 text-xs font-black uppercase">
               {post.date}
