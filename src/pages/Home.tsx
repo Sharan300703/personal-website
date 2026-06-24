@@ -2,7 +2,7 @@ import { Navbar } from "../components/Navbar";
 import { Hero } from "../components/Hero";
 import { FeaturedProjects } from "../components/FeaturedProjects";
 import { AboutSkills } from "../components/AboutSkills";
-import { BlogPreview } from "../components/BlogPreview";
+// import { BlogPreview } from "../components/BlogPreview";
 import { ContactFooter } from "../components/ContactFooter";
 
 export function Home() {
@@ -12,7 +12,7 @@ export function Home() {
       <Hero />
       <FeaturedProjects />
       <AboutSkills />
-      <BlogPreview />
+      {/* <BlogPreview /> */}
       <ContactFooter />
     </main>
   );
