@@ -19,9 +19,9 @@ export function AboutSkills() {
       className="border-y-4 border-[#151515] bg-[#00B8A9] px-5 py-16"
     >
       <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.75fr_1.5fr] lg:items-start">
-        <div className="relative mx-auto w-full max-w-sm rotate-[-2deg] rounded-2xl border-4 border-[#151515] bg-[#FFF7E8] p-3 shadow-[8px_8px_0_#151515] lg:mx-0">
-          <StickerLabel className="absolute -top-4 left-1/2 z-10 -translate-x-1/2 rotate-2 px-5">
-            Photo
+        <div className="relative mx-auto w-full max-w-sm -rotate-2 rounded-2xl border-4 border-[#151515] bg-[#FFF7E8] p-3 shadow-[8px_8px_0_#151515] lg:mx-0">
+          <StickerLabel className="absolute -top-4 left-1/2 z-10 -translate-x-1/2 px-5">
+            Me
           </StickerLabel>
 
           <img
@@ -33,7 +33,7 @@ export function AboutSkills() {
 
         <div className="grid gap-8">
           <div className="rounded-2xl border-4 border-[#151515] bg-[#FFF7E8] p-6 shadow-[6px_6px_0_#151515]">
-            <StickerLabel className="mb-4 rotate-[-2deg]">
+            <StickerLabel className="mb-4 -rotate-2">
               About Me
             </StickerLabel>
 
@@ -42,17 +42,16 @@ export function AboutSkills() {
             </h2>
 
             <p className="mt-5 font-medium leading-relaxed">
-              I&apos;m Sharan, a computing student and developer based in
+              I'm Sharan, a computing student and developer based in
               Melbourne. I enjoy working at the intersection of technology and
-              people - building systems that solve real problems clearly and
-              thoughtfully.
+              business - building systems that solve real problems to improve efficiency and ease-of-use.
             </p>
 
             <p className="mt-4 font-black">Melbourne, Australia</p>
           </div>
 
           <div>
-            <StickerLabel className="mb-4 rotate-[1deg]">
+            <StickerLabel className="mb-4 -rotate-1">
               What I Work With
             </StickerLabel>
 

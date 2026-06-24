@@ -12,7 +12,6 @@ export function BlogPreview() {
     <section id="blog" className="mx-auto max-w-7xl px-5 py-16">
       <div className="mb-8 flex items-end justify-between gap-4">
         <div>
-          <StickerLabel className="rotate-[1deg]">✎ Latest writing</StickerLabel>
           <h2 className="mt-2 text-4xl font-black md:text-5xl">
             Latest from the Blog
           </h2>

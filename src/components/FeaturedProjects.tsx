@@ -13,7 +13,6 @@ export function FeaturedProjects() {
     >
       <div className="mb-7 flex items-end justify-between gap-4 sm:mb-8">
         <div className="min-w-0">
-          <StickerLabel className="rotate-[-1deg]">✶ Featured work</StickerLabel>
           <h2 className="mt-2 text-3xl font-black leading-tight sm:text-4xl md:text-5xl">
             Featured Projects
           </h2>

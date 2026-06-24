@@ -26,7 +26,7 @@ export function ProjectCard({
       </div>
 
       <div className="flex flex-1 flex-col p-4 sm:p-5">
-        <h3 className="break-words text-lg font-black leading-tight sm:text-xl">
+        <h3 className="wrap-break-word text-lg font-black leading-tight sm:text-xl">
           {title}
         </h3>
         <p className="mt-3 text-sm font-medium leading-relaxed sm:text-[15px]">
@@ -37,7 +37,7 @@ export function ProjectCard({
           {tags.map((tag) => (
             <span
               key={tag}
-              className="max-w-full break-words rounded border-2 border-[#151515] bg-[#FFF7E8] px-2 py-1 text-xs font-black leading-tight"
+              className="max-w-full wrap-break-word rounded border-2 border-[#151515] bg-[#FFF7E8] px-2 py-1 text-xs font-black leading-tight"
             >
               {tag}
             </span>

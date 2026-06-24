@@ -57,7 +57,7 @@ export function Navbar() {
           aria-controls="mobile-menu"
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           onClick={() => setIsMenuOpen((isOpen) => !isOpen)}
-          className="min-h-11 rounded-md border-2 border-[#151515] bg-[#FFD166] px-4 py-2 font-black shadow-[3px_3px_0_#151515] transition active:translate-x-[2px] active:translate-y-[2px] active:shadow-[1px_1px_0_#151515] md:hidden"
+          className="min-h-11 rounded-md border-2 border-[#151515] bg-[#FFD166] px-4 py-2 font-black shadow-[3px_3px_0_#151515] transition hover:cursor-pointer active:translate-x-0.5 active:translate-y-0.5 active:shadow-[1px_1px_0_#151515] md:hidden  hover:-translate-y-1 hover:shadow-[6px_6px_0_#151515] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#151515]"
         >
           {isMenuOpen ? "Close" : "Menu"}
         </button>
@@ -83,7 +83,7 @@ export function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setIsMenuOpen(false)}
-              className={`${resumeButtonClass} mt-1 min-h-11 px-3 py-2.5 text-center active:translate-x-[2px] active:translate-y-[2px] active:shadow-[1px_1px_0_#151515]`}
+              className={`${resumeButtonClass} mt-1 min-h-11 px-3 py-2.5 text-center active:translate-x-0.5 active:translate-y-0.5 active:shadow-[1px_1px_0_#151515]`}
             >
               Resume →
             </a>
